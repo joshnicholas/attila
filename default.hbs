@@ -70,13 +70,6 @@
 									<span class="archive-type">{{t "Archive"}}</span>
 								</span>
 								<h2 class="archive-title">{{t "Topics"}}</h2>
-								<span class="post-tags archive-taglist">
-									{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
-										{{#foreach tags}}
-											<a href='{{ url }}'>{{ name }}: {{ count.posts }}</a>
-										{{/foreach}}
-									{{/get}}
-								</span>
 							</div>
 						</div>
 					</div>
@@ -86,16 +79,16 @@
 			<div class="search-close"></div>
 		</div>
 
-		<div class="nav-footer">
+		<!-- <div class="nav-footer">
 			<nav class="nav-wrapper" aria-label="{{t "Footer"}}">
 				{{#if @site.secondary_navigation}}
 				{{navigation type="secondary"}}
 				{{else}}
 				<span class="nav-copy">{{@site.title}} &copy; {{date format='YYYY'}}</span>
 				{{/if}}
-				<span class="nav-credits">{{t "Published with"}} <a href="https://ghost.org">Ghost</a> &bull; {{t "Theme" }} <a href="https://github.com/zutrinken/attila">Attila</a></span>
+				<span class="nav-credits">{{t "Published with"}} <a href="https://ghost.org">Ghost</a> {{t "using a modified" }} <a href="https://github.com/zutrinken/attila">Attila theme</a></span>
 			</nav>
-		</div>
+		</div> -->
 
 	</section>
 
